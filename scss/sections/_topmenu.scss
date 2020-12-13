@@ -1,0 +1,39 @@
+#topmenu {
+    font-family: 'Roboto', sans-serif;
+    display: none;
+    height: 60px;
+    border-bottom: 1px solid $light-gray;
+    align-items: center;
+
+
+    @media (min-width: 768px) {
+        display: flex;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    #hours {
+        color: $gray;
+        display: flex;
+        align-items: center;
+
+        i {
+            font-size: 1.25rem;
+            color: $blue;
+            margin-right: 0.5rem;
+        }
+    }
+
+    #socialmedia {
+        a {
+            color: $blue;
+            margin-left: 1.625rem;
+
+            &:hover {
+                color: $teal;
+            }
+        }
+    }
+}

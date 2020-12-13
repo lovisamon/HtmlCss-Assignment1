@@ -1,0 +1,80 @@
+#aboutus {
+    padding-bottom: 4rem;
+
+    @media(min-width: 768px) {
+        padding-top: 4rem;
+        padding-bottom: 0;
+    }
+
+    #aboutus-left-column {
+        text-align: left;
+        padding-top: 2rem;
+
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 24px;
+            text-align: center;
+            padding-bottom: 1rem;
+            
+            @media(min-width: 768px) {
+                font-size: 40px;
+                text-align: left;
+                padding-right: 10rem;
+                
+            }
+            @media(min-width: 1200px) {
+                padding-right: 16rem;
+            }
+        }
+
+        .desc {
+            padding-top: 1rem;
+            text-align: center;
+
+            @media (min-width: 768px) {
+                text-align: left;
+
+            }
+        }
+
+        #statistics {
+            font-family: 'Roboto Slab', serif;
+            font-size: 14px;
+            text-align: center;
+
+
+            @media (min-width: 768px) {
+                font-size: 18px;
+                text-align: left;
+            }
+        
+            .color-blue {
+                font-size: 20px;
+
+                @media (min-width: 768px) {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    #aboutus-right-column {
+        display: none;
+
+        @media (min-width: 1200px) {
+            display: block;
+            margin-left: 10rem;
+            padding: 0;
+        }
+    }
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

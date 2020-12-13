@@ -1,0 +1,41 @@
+#mainmenu {
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
+
+    @media (min-width: 768px) {
+        padding-top: 3.125rem;
+        padding-bottom: 3.125rem;
+
+        div {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #btn-menu {
+            display: none;
+        }
+    }
+
+    #menu {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    a {
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.125rem;
+        color: $gray;
+        text-decoration: none;
+
+        &:hover {
+            color: $teal;
+        }
+
+        p {
+            padding-left: 2.0625rem;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+#showcase {
+    background-color: $light-gray;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    max-height: 700px;
+
+    @media(min-width: 1200px) {
+        padding-top: 1.3125rem;
+        padding-bottom: 0;
+    }
+
+    #showcase-left-column {
+        display: none;
+
+        img {
+            margin-left: -147px;
+            margin-right: 150px;
+        }
+
+        @media (min-width: 1200px) {
+            display: block;
+        }
+    }
+
+    #showcase-right-column {
+        text-align: center;
+
+        @media (min-width: 1200px) {
+            text-align: left;
+        }
+
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            padding-bottom: 2.5rem;
+
+            @media (min-width: 768px) {
+                font-size: 3.75rem;
+            }
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.125rem;
+            padding-bottom: 2.5rem;
+        }
+
+        #btn-showcase {
+            background-color: #25E6C8;
+            color: white;
+
+            &:hover {
+                background-color: $blue;
+            }
+        }
+    }
+
+}
